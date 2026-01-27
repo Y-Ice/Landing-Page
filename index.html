@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login | Krizjhay Footwears</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="container" id="loginPage">
+
+        <h1>Login Page</h1>
+        <p>Please login to access my personal information.</p>
+        
+        <label>Username:</label>
+        <input type="text" id="username" placeholder="Enter your user name">
+
+        <label>Password:</label>
+        <input type="password" id="password" placeholder="Enter your password">
+
+        <button onclick="login()">Login</button>
+
+        <p id="error" style="color:red;"></p>
+        
+    </div>
+
+    <!-- <script>
+        function login() {
+            var user = document.getElementById('username').value;
+            var pass = document.getElementById('password').value;
+
+            if (user === "rotshak" && pass === "1234") {
+                document.getElementById('loginPage').style.display = "none";
+                document.getElementById('infoPage').style.display = "block";
+            } else {
+                document.getElementById('error').innerText = "Invalid username or password";
+            }
+        }
+    </script> -->
+
+    <script>
+        function login() {
+            var user = document.getElementById('username').value;
+            var pass = document.getElementById('password').value;
+            if (user === "rotshak" && pass === "1234") {
+                window.location.href = "home.html"; 
+            } else {
+                document.getElementById('error').innerText = "Invalid username or password";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
