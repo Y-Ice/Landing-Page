@@ -3,53 +3,352 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Login | Krizjhay Footwears</title>
-    <link rel="stylesheet" href="login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krizjhay Footwears</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="container" id="loginPage">
 
-        <h1>Login Page</h1>
-        <p>Please login to access my personal information.</p>
-        
-        <label>Username:</label>
-        <input type="text" id="username" placeholder="Enter your user name">
+    <main>
 
-        <label>Password:</label>
-        <input type="password" id="password" placeholder="Enter your password">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><span>K</span>Krizjhay</a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#collect">Collections</a></li>
+                    <li><a href="#brand">Brands</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
 
-        <button onclick="login()">Login</button>
+                <a href="index.html" class="btn">Log Out</a>
 
-        <p id="error" style="color:red;"></p>
-        
-    </div>
+            </div>
+        </nav>
 
-    <!-- <script>
-        function login() {
-            var user = document.getElementById('username').value;
-            var pass = document.getElementById('password').value;
 
-            if (user === "rotshak" && pass === "1234") {
-                document.getElementById('loginPage').style.display = "none";
-                document.getElementById('infoPage').style.display = "block";
-            } else {
-                document.getElementById('error').innerText = "Invalid username or password";
-            }
-        }
-    </script> -->
+        <!-- HERO SECTION -->
 
-    <script>
-        function login() {
-            var user = document.getElementById('username').value;
-            var pass = document.getElementById('password').value;
-            if (user === "Rotshak" && pass === "1234") {
-                window.location.href = "home.html"; 
-            } else {
-                document.getElementById('error').innerText = "Invalid username or password";
-            }
-        }
-    </script>
+        <div class="hero">
+
+            <div class="left">
+                <img src="assets/shoe.png" alt="">
+            </div>
+            <div class="right">
+                <h1>
+                    Explore Casual & Comfortable Footwears
+                </h1>
+                <h3>
+                    Style, Work & Safety
+                </h3>
+                <p>
+                    Discover the lastest trends in our Footwear Industry,<br> featuring shoes designed for everyday use.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- COLLECTION SECTION -->
+
+        <div class="collect" id="collect">
+
+            <h1>Our Collections</h1>
+            <p>Dive intoa curated collection of footwears that caters to every taste and occasion. <br> Discover the
+                lastest trends in our fashion.
+            </p>
+
+            <div class="boxes">
+
+                <div class="box">
+                    <img src="assets/image (1).jpg" alt="">
+                    <div class="text">
+                        <img src="assets/star.png" alt="">
+                        <h4>Krizjhay Collections</h4>
+                        <p>&#8358;150,000 <span>&#8358;170,000</span></p>
+                    </div>
+                    <a href="https://wa.me/09163953371"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+                </div>
+
+                <div class="box">
+                    <img src="assets/image (2).jpg" alt="">
+                    <div class="text">
+                        <img src="assets/star.png" alt="">
+                        <h4>Krizjhay Collections</h4>
+                        <p>&#8358;150,000 <span>&#8358;170,000</span></p>
+                    </div>
+                    <a href="https://wa.me/09163953371"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+                </div>
+
+                <div class="box">
+                    <img src="assets/image (3).jpg" alt="">
+                    <div class="text">
+                        <img src="assets/star.png" alt="">
+                        <h4>Krizjhay Collections</h4>
+                        <p>&#8358;150,000 <span>&#8358;170,000</span></p>
+                    </div>
+                    <a href="https://wa.me/09163953371"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+                </div>
+
+                <div class="box">
+                    <img src="assets/image (11).jpg" alt="">
+                    <div class="text">
+                        <img src="assets/star.png" alt="">
+                        <h4>Krizjhay Collections</h4>
+                        <p>&#8358;150,000 <span>&#8358;170,000</span></p>
+                    </div>
+                    <a href="https://wa.me/09163953371"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+                </div>
+
+                <div class="box">
+                    <img src="assets/image (4).jpg" alt="">
+                    <div class="text">
+                        <img src="assets/star.png" alt="">
+                        <h4>Krizjhay Collections</h4>
+                        <p>&#8358;150,000 <span>&#8358;170,000</span></p>
+                    </div>
+                    <a href="https://wa.me/09163953371"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+                </div>
+
+                <div class="box">
+                    <img src="assets/image (5).jpg" alt="">
+                    <div class="text">
+                        <img src="assets/star.png" alt="">
+                        <h4>Krizjhay Collections</h4>
+                        <p>&#8358;150,000 <span>&#8358;170,000</span></p>
+                    </div>
+                    <a href="https://wa.me/09163953371"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+                </div>
+
+                <div class="box">
+                    <img src="assets/image (6).jpg" alt="">
+                    <div class="text">
+                        <img src="assets/star.png" alt="">
+                        <h4>Krizjhay Collections</h4>
+                        <p>&#8358;150,000 <span>&#8358;170,000</span></p>
+                    </div>
+                    <a href="https://wa.me/09163953371"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+                </div>
+
+                <div class="box">
+                    <img src="assets/image (7).jpg" alt="">
+                    <div class="text">
+                        <img src="assets/star.png" alt="">
+                        <h4>Krizjhay Collections</h4>
+                        <p>&#8358;150,000 <span>&#8358;170,000</span></p>
+                    </div>
+                    <a href="https://wa.me/09163953371"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+                </div>
+
+                <div class="box">
+                    <img src="assets/image (8).jpg" alt="">
+                    <div class="text">
+                        <img src="assets/star.png" alt="">
+                        <h4>Krizjhay Collections</h4>
+                        <p>&#8358;150,000 <span>&#8358;170,000</span></p>
+                    </div>
+                    <a href="https://wa.me/09163953371"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+                </div>
+
+                <div class="box">
+                    <img src="assets/image (9).jpg" alt="">
+                    <div class="text">
+                        <img src="assets/star.png" alt="">
+                        <h4>Krizjhay Collections</h4>
+                        <p>&#8358;150,000 <span>&#8358;170,000</span></p>
+                    </div>
+                    <a href="https://wa.me/09163953371"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+                </div>
+
+                <div class="box">
+                    <img src="assets/image (10).jpg" alt="">
+                    <div class="text">
+                        <img src="assets/star.png" alt="">
+                        <h4>Krizjhay Collections</h4>
+                        <p>&#8358;150,000 <span>&#8358;170,000</span></p>
+                    </div>
+                    <a href="https://wa.me/09163953371"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+                </div>
+
+                <div class="box">
+                    <img src="assets/image (12).jpg" alt="">
+                    <div class="text">
+                        <img src="assets/star.png" alt="">
+                        <h4>Krizjhay Collections</h4>
+                        <p>&#8358;150,000 <span>&#8358;170,000</span></p>
+                    </div>
+                    <a href="https://wa.me/09163953371"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+                </div>
+
+                <div class="box">
+                    <img src="assets/image (13).jpg" alt="">
+                    <div class="text">
+                        <img src="assets/star.png" alt="">
+                        <h4>Krizjhay Collections</h4>
+                        <p>&#8358;150,000 <span>&#8358;170,000</span></p>
+                    </div>
+                    <a href="https://wa.me/09163953371"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+                </div>
+
+                <div class="box">
+                    <img src="assets/image (14).jpg" alt="">
+                    <div class="text">
+                        <img src="assets/star.png" alt="">
+                        <h4>Krizjhay Collections</h4>
+                        <p>&#8358;150,000 <span>&#8358;170,000</span></p>
+                    </div>
+                    <a href="https://wa.me/09163953371"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+                </div>
+
+                <div class="box">
+                    <img src="assets/image (15).jpg" alt="">
+                    <div class="text">
+                        <img src="assets/star.png" alt="">
+                        <h4>Krizjhay Collections</h4>
+                        <p>&#8358;150,000 <span>&#8358;170,000</span></p>
+                    </div>
+                    <a href="https://wa.me/09163953371"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+                </div>
+
+                <div class="box">
+                    <img src="assets/image (16).jpg" alt="">
+                    <div class="text">
+                        <img src="assets/star.png" alt="">
+                        <h4>Krizjhay Collections</h4>
+                        <p>&#8358;150,000 <span>&#8358;170,000</span></p>
+                    </div>
+                    <a href="https://wa.me/09163953371"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- BRANDS SECTION -->
+
+        <div class="brand" id="brand">
+
+            <h1>
+                Brands
+            </h1>
+            <p>
+                Below are variety of brands that offer amazing seervices.
+            </p>
+            <div class="boxes">
+
+                <div class="box">
+                    <img src="assets/brand (1).jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <img src="assets/brand (2).jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <img src="assets/brand (3).jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <img src="assets/brand (4).jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <img src="assets/brand (5).jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <img src="assets/brand (6).jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <img src="assets/brand (7).jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <img src="assets/brand (8).jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <img src="assets/brand (9).jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <img src="assets/brand (10).jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <img src="assets/brand (11).jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <img src="assets/brand (12).jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <img src="assets/brand (13).jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <img src="assets/brand (14).jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <img src="assets/brand (15).jpg" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ABOUT SECTION -->
+
+        <div class="about" id="about">
+            <h1>About Me</h1>
+            <div class="cont">
+                <div class="image">
+                    <img src="assets/WhatsApp Image 2026-01-27 at 5.41.27 AM.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <h2>My name is <br>Duada Rotshak Gwashi</h2>
+                    <p>I am a Footwear Entrepreneur with years of experience marketing pieces that redefine how we move. <br>To me, footwear is more than just a necessity, it's a form of body language a way to tell your story and express your personality with every step.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <hr class="hr-line">
+
+
+        <!-- FOOTER SECTION -->
+
+        <div class="footer">
+
+                <p>&copy;2026 Krizjhay Footwears Limited . All Rights Reserved.</p>
+                <ul>
+                    •
+                    <li>Privacy policy</li>
+                    •
+                    <li>Return policy</li>
+                    •
+                    <li>Customer Agreement</li>
+                </ul>
+
+        </div>
+
+
+
+    </main>
 
 </body>
 

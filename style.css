@@ -9,6 +9,9 @@ a{
     text-decoration: none;
 
 }
+i{
+    margin-right: 5px;
+}
 
 nav{
     display: flex;
@@ -198,7 +201,7 @@ nav .nav{
     margin-left: 10px;
     text-decoration: line-through;
 }
-.collect .boxes .box button{
+.collect .boxes .box a{
     background: black;
     color: white;
     font-size: 16px;
@@ -206,12 +209,13 @@ nav .nav{
     border: none;
     border-radius: 10px;
     padding: 10px 0;
+    text-align: center;
     transition: all 0.3s ease-in-out;
 }
-.collect .boxes .box button:hover{
-    background-color: rgb(179, 118, 94);
+.collect .boxes .box a:hover{
+    background-color: rgb(43, 139, 34);
     color: rgb(255, 255, 255);
-    cursor:not-allowed;
+    cursor: pointer;
 }
 
 /* BRANDS SECTION */
